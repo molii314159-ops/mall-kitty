@@ -1,48 +1,108 @@
 
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🛒 亲属卡商城（测试版）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>亲属卡商城</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f8f8f8;
-      max-width: 450px;
-      margin: auto;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
     }
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    header {
+      background: #3c3c3c;
+      color: white;
+      padding: 1rem;
       text-align: center;
+      font-size: 1.5rem;
     }
-    h1 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
     }
-    p {
-      font-size: 16px;
-      margin-top: 6px;
-      color: #444;
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 1rem;
+      width: 280px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-price {
+      color: #f40;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background: #f40;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #d93600;
+    }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>✅ 商城部署成功</h1>
-    <p>说明 GitHub Pages 能正常运行</p>
-    <p>你可以替换为完整版商城页面</p>
-    <p>🧠 嶙：欢迎回来，小猫</p>
+  <header>🛒 亲属卡商城</header>
+  <div class="container">
+    <div class="card">
+      <img src="https://picsum.photos/300/180?random=1" alt="商品1">
+      <div class="card-content">
+        <div class="card-title">随机商品1</div>
+        <div class="card-price">¥99.00</div>
+        <button class="btn">立即购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/180?random=2" alt="商品2">
+      <div class="card-content">
+        <div class="card-title">随机商品2</div>
+        <div class="card-price">¥129.00</div>
+        <button class="btn">立即购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/180?random=3" alt="商品3">
+      <div class="card-content">
+        <div class="card-title">随机商品3</div>
+        <div class="card-price">¥59.00</div>
+        <button class="btn">立即购买</button>
+      </div>
+    </div>
   </div>
+  <footer>© 2026 亲属卡商城 · 嶙为小猫定制</footer>
 </body>
 </html>
